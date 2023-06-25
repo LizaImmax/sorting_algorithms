@@ -45,7 +45,7 @@ void sort_counter(int *array, size_t size, int sig, int *buffr)
 
 	for (i = size - 1; (int)i >= 0; i--)
 	{
-		buff[count[(array[i] / sig) % 10] - 1] = array[i];
+		buffr[count[(array[i] / sig) % 10] - 1] = array[i];
 		count[(array[i] / sig) % 10] -= 1;
 	}
 
